@@ -1,0 +1,41 @@
+{
+  "name": "ast-match",
+  "version": "0.1.3",
+  "description": "Match AST nodes using JSON Schema.",
+  "main": "ast-match.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/GREENpoint/ast-match"
+  },
+  "keywords": [
+    "ast",
+    "match",
+    "matcher",
+    "astmatch",
+    "astmatcher",
+    "json",
+    "schema",
+    "jsonschema",
+    "json-schema",
+    "mozilla",
+    "parser"
+  ],
+  "author": "Vitaliy Green",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GREENpoint/ast-match/issues"
+  },
+  "dependencies": {
+    "tv4": "~1.0.10"
+  },
+  "devDependencies": {
+    "esprima": "~1.0.4",
+    "estraverse": "~1.3.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-mocha-test": "~0.7.0"
+  }
+}
