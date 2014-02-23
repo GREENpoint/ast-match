@@ -29,7 +29,7 @@ estraverse.traverse({
 // Print all "MyMethod" function calls.
 estraverse.traverse({
     enter: function(node, parent) {
-        if(astMatch.test(node, allOf: [ { '$ref': 'CallExpression' }, {
+        if(astMatch.test(node, { allOf: [ { '$ref': 'CallExpression' }, {
                 'properties': {
                     'callee': {
                         'allOf': [ { '$ref': 'Identifier' }, {
