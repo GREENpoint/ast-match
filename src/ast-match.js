@@ -17,7 +17,7 @@
     function test(node, schema) {
         schema = typeof schema === 'object' ? schema : tv4.getSchema(schema);
         if(!schema) {
-            throw new Error('Missed schema "' + schema '".');
+            throw new Error('Missed schema "' + schema + '".');
         }
         return tv4.validateResult(node, schema).valid;
     }
@@ -169,7 +169,6 @@
                         "id",
                         "params",
                         "defaults",
-                        "rest",
                         "body",
                         "generator",
                         "expression"
@@ -797,7 +796,6 @@
                         "id",
                         "params",
                         "defaults",
-                        "rest",
                         "body",
                         "generator",
                         "expression"
@@ -1032,7 +1030,6 @@
                         "id",
                         "params",
                         "defaults",
-                        "rest",
                         "body",
                         "generator",
                         "expression"

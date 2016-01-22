@@ -10,7 +10,7 @@ function countEntries(schema) {
     var count = 0;
     estraverse.traverse(ast, {
         enter: function(node, parent) {
-            if(astMatch.test(node, schema)) {
+            if (astMatch.test(node, schema)) {
                 count++;
             }
         }
@@ -19,12 +19,10 @@ function countEntries(schema) {
 }
 
 describe('AST Match', function() {
-
     before(function() {
         ast = esprima.parse(fs.readFileSync('./test/source.js', {
             encoding: 'utf-8'
         }));
-        var util = require('util');
     });
 
     it('should be one program node', function() {
@@ -74,5 +72,4 @@ describe('AST Match', function() {
     after(function() {
         ast = null;
     });
-
 });
